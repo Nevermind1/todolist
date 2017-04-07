@@ -30,7 +30,10 @@ var vm=new Vue({
   		var _this=this;
   		this.items.push({text:this.inputVaule});
   		this.inputVaule="";
-  	}
+  	},
+    removeTodo: function (todo) {
+      this.items.splice(this.items.indexOf(todo), 1)
+    }
   },
 
   watch:{
