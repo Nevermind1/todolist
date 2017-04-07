@@ -28,7 +28,7 @@ var vm=new Vue({
   methods:{
   	add:function(){
   		var _this=this;
-  		this.items.push({text:this.inputVaule});
+  		this.items.push({text:this.inputVaule,completed:true});
   		this.inputVaule="";
   	},
     removeTodo: function (todo) {
